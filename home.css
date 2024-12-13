@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.herotext{
+    margin: -100;
+}
+
+
+.main{
+    width: 100%;
+    background: url(round.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .eagle{
+    width: 150px;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-left: -8%;
+}
+
+ul{
+    margin-top: -4%;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-top: -3%;
+    transition: .3s ease;
+}
+
+.info a:hover{
+    color: orange;
+}
+
+.info{
+    margin-left: 7%;
+    margin-top: 8%;
+}
+
+.info h2{
+    font-size: 50px;
+    color: white;
+}
+
+.info h1{
+    font-size: 50px;
+    color: white;
+}
+
+.info h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: bisque;
+}
+
+.info span{
+    color: gold
+}
+
+.info a{
+    text-decoration:  none;
+    color: black;
+    background: white;
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+
+.info a:hover{
+    background: skyblue
+}
+
+.image{
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    right: 100px;
+    margin-top: -300px;
+}
+
+
+.image img{
+    position: absolute;
+    height: 116%;
+    left: 40%;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+
+.image:hover .me{
+    left: 55%;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+<header>
+    <div class="main">
+        <div class="navbar">
+            <img src="eagle.png" class="eagle">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="pictures.html">Pictures</a></li>
+                <li><a href="Contact.html">Contacts</a></li>
+            </ul>         
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+               
+                <div class="about-col-1">
+                    <img src="ily.jpg" alt="About Image" class="about-image">
+                </div>
+               
+                <div class="about-col-2">
+                    <h1>My Information</h1>
+                    <p>Hello, my name is Reynaldo S. Pingoy Jr., and I am 18 years old. I am currently in my first year of college at STI Muñoz EDSA,
+                         where I am pursuing a degree in Information Technology (I.T.). With a strong interest in the world of technology, 
+                         I have set my sights on a career in cybersecurity. My goal is to become a cybersecurity specialist 
+                         and help organizations protect their digital infrastructure from growing online threats.</p>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('award')">Awards</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Language</span><br>English, Filipino and ilocano</li>
+                                <li><span>Programming</span><br>Java</li>
+                                <li><span>Gamer</span><br>Mobile Legends Bang Bang, Valorant, and PUBG</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2017 - 2021</span><br>Jr High at E.RODRIGUEZ JR HIGH SCHOOL<br></li>
+                                <li><span>2021 - 2023</span><br>Grade 11 S.T.I. COLLEGE MUNOZ-EDSA</li>
+                                <li><span>2022 - 2023</span><br>Grade 12 S.T.I. COLLEGE MUNOZ-EDSA</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="award">
+                            <ul>
+                                <li><span>Grade 11</span><br>With Honor(1st/2nd Semester)</li>
+                                <li><span>Grade 12</span><br>With Honor&High Honor(1st/2nd Semester)</li>
+                                <li><span>Grade 7, 8, and 10</span><br>With Honor</li>
+                                <li><span>Grade 9</span><br>With Highest Honor</li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+        document.querySelector("." + tabname).classList.add("active-link");
+
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.herotext{
+    margin: -100;
+}
+
+
+.main{
+    width: 100%;
+    background: url(grad.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .eagle{
+    width: 150px;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-left: -8%;
+}
+
+ul{
+    margin-top: -4%;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-top: -3%;
+    transition: .3s ease;
+}
+
+.info a:hover{
+    color: orange;
+}
+
+.info{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+
+  .image-container {
+    display: flex;
+    position: relative;
+    gap: 20px;
+  }
+
+  .bitch{
+    width: 250px;
+    height: auto;
+    margin-bottom: 900px;
+    margin-left: -100px;
+    position: absolute;
+    top: 90px;   
+    left: -190px;  
+  }
+
+  .two{
+    width: 300px;
+    height: auto;
+    margin-bottom: -60px;
+    margin-left: 420px;
+    position: absolute;
+    bottom: -400px;   
+    left: 30px;  
+  }
+
+  .three{
+    width: 300px;   /* Set the width of the image or container */
+    height: auto;   /* Maintain aspect ratio */
+    position: absolute;
+    bottom: -450px;   /* Position it 30px from the bottom */
+    right: -350px;    /* Position it 30px from the right edge */
+    margin: 0;
+  }
+
+  .image-container img {
+    border-radius: 10px;
+    cursor: pointer; /* Pointer cursor for clickable images */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+  }
+
+  /* Hover effect for Images */
+  .image-container img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+
+  .info{
+    font-size: 15px;
+    font-weight: bold;
+    font-weight: bold;
+    color: red;
+  }

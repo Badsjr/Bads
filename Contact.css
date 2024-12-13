@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: url(round.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .eagle {
+    width: 150px;
+    cursor: pointer;
+    margin-top: 1%;
+    margin-left: -8%;
+}
+
+ul {
+    margin-top: -4%;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-top: -3%;
+    transition: .3s ease;
+}
+
+ul li a:hover {
+    color: orange;
+}
+
+.contact {
+    padding: 50px 0;
+}
+
+/* Flexbox container for left and right contact sections */
+.container {
+    display: flex;
+    justify-content: flex-start; /* Keeps left section on the left */
+    align-items: center;         /* Vertically center the content */
+}
+
+/* Contact-left section styles */
+.contact-left {
+    width: 50%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+.contact-left h1 {
+    font-size: 40px;
+    color: white;
+    margin-left: 200px;
+}
+
+.contact-left p {
+    font-size: 20px;
+    color: white;
+    margin-left: 200px;
+}
+
+.contact-left .social-icons a {
+    font-size: 40px;
+    color: white;
+    margin-right: -50px;
+    transition: color 0.3s ease;
+    margin-left: 200px;
+}
+
+.contact-left .social-icons a:hover {
+    color: orange;
+}
+
+/* Contact-right section styles */
+.contact-right {
+    width: 45%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 700px; /* Push the form to the right side */
+    margin-top: -200px;
+}
+
+/* Styling for the form elements inside the contact-right */
+.contact-right input, 
+.contact-right textarea, 
+.contact-right button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-right button {
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-right button:hover {
+    background-color: darkorange;
+}
